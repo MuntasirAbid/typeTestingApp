@@ -25,6 +25,33 @@
         variable when declared inside the if or switch conditions or inside for or while loops, are accessible within
         that particular condition or loop
     </p>
+    <h1>
+        How does the event loop works in JavaScript ?
+    </h1>
+    <p>
+        The Event Loop has one simple job to monitor the Call Stack and the Callback Queue. If the Call Stack is
+        empty, the Event Loop will take the first event from the queue and will push it to the Call Stack, which
+        effectively runs it. Such an iteration is called a tick in the Event Loop.
+    </p>
+    <h1>
+        How many ways we might get undefined ?
+    </h1>
+    <p>
+        undefined means, value of the variable is not defined. JavaScript has a global variable undefined whose value is
+        "undefined" and typeof undefined is also "undefined". Remember, undefined is not a constant or a keyword.
+        undefined is a type with exactly one value: undefined. Assigning a new value to it does not change the value of
+        the type undefined.
+
+    <h3>8 Ways to get Undefined:</h3>
+    i) A declared variable without assigning any value to it. <br>
+    ii) Implicit returns of functions due to missing return statements. <br>
+    iii) Return statements that do not explicitly return anything. <br>
+    iv) Lookups of non-existent properties in an object. <br>
+    v) Function parameters that have not passed. <br>
+    vi) Anything that has been set to the value of undefined. <br>
+    vii) Any expression in the form of void(expression) <br>
+    viii) The value of the global variable undefined
+    </p>
 
 
 </html>
